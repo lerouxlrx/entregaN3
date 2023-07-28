@@ -1,0 +1,27 @@
+/*Contacto*/
+
+.contactoS2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .contactoS2A1 {
+        text-align: center;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .contactoS2A2 {
+        align-items: center;
+        padding: 50px;
+        i {
+            font-size: 300%;
+        }
+        a {
+            font-size: 150%;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,162 @@
+@import "reset";
+@import "nav.scss";
+@import "footer";
+@import "pageIndex";
+@import "pageContacto";
+@import "pagePlanes";
+@import "pageNosotros";
+
+/*Titulo de page Planes, Contacto y Nosotros*/
+
+.tituloS1 {
+    position: relative;
+    
+    img {
+        display: block;
+        width: 100%;
+        height: 300px;
+    }
+    
+    h2, h3 {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: azure;
+        font-size: 40px;
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    h2 {
+        top: 25px;
+    }
+
+    h3 {
+        bottom: 50px;
+    }
+}
+
+
+@media(max-width:1200px){
+    .piePagina {
+        grid-template-columns: 1fr 1fr;       
+    }
+    .pieLogo {
+        grid-row: 2/3
+    }
+    .pieMapa {
+        grid-column: 1/3;
+    }
+    .pieIconos {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .nav .liNav {
+        width: 75px;
+    }
+    
+}
+
+@media(max-width:768px){
+    .piePagina {
+        grid-template-columns: 1fr 1fr 1fr;       
+    }
+    .pieLogo {
+        grid-column: 1/3;
+        grid-row: 2/3
+    }
+    .pieMapa {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .pieIconos {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    
+    .nav .menu {
+        display: block;
+        color: black;
+        font-size: 24px;
+        position: absolute;
+        right: 50px;
+    }
+    
+    .listaNav {
+        position: fixed;
+        background-color: rgba(184, 180, 255, 0.706);
+        top: 62px;
+        right: 50px;
+        width: 200px;
+        height: 250px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .nav .menu:hover {
+        color:beige;
+    }
+    .nav nav{
+        display: none;
+    }
+    .nav .menu:hover + nav {
+        display: block;
+    }
+    .nav nav:hover {
+        display: block;
+    }
+    .nav a {
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+        margin: 15px;
+        text-align: center;
+    }
+    .crearCuenta {
+        background-color: aquamarine;
+        border: outset aquamarine;
+        width: 80%;
+    }
+    .inicioS1 {
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        .inicioS1A1 {
+            order: 2;
+            width: 100%;
+            height: 50%;
+            flex-direction: column;
+        }
+
+          .inicioS1A2 {
+            width: 100%;
+            height: 50%;
+        }
+    }  
+}
+
+@media(max-width:576px){
+    .piePagina {
+        grid-template-columns: 1fr 1fr 1fr;       
+    }
+    .pieLogo {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .logoContainer {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .pieMapa {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .pieIconos {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

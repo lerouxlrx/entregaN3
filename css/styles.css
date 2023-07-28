@@ -1,0 +1,455 @@
+/*Reset*/
+* {
+  font-family: Calibri;
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+/*Navegador*/
+.wappIni {
+  font-size: 20px;
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+  background-color: aqua;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(165, 238, 249);
+  position: fixed;
+  top: 24px;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+
+.navDiv {
+  display: flex;
+  align-items: center;
+}
+
+.listaNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+
+.logoEnc {
+  height: 100px;
+  width: 100px;
+}
+
+.titEnc {
+  margin-left: 10px;
+}
+
+.liNav, .cuenta {
+  display: flex;
+  width: 125px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 5px;
+  text-align: center;
+}
+
+.nav .menu {
+  display: none;
+}
+
+.crearCuenta {
+  background-color: aquamarine;
+  border: outset aquamarine;
+}
+
+main {
+  margin-top: 124px;
+}
+
+/*Footer*/
+.piePagina {
+  background-color: rgba(127, 238, 255, 0.426);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  padding: 10px;
+}
+
+.pieLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pieLogo > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.pieLogo a {
+  margin: 0 5px;
+}
+
+.logoPie {
+  height: 100px;
+  width: 100px;
+}
+
+.pieMapa {
+  margin: 10px;
+}
+
+.pieMapa iframe {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pieIconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pieIconos a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pieIconos i {
+  font-size: 250%;
+}
+
+/*Index*/
+.inicioS1 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 100%;
+  align-items: center;
+}
+.inicioS1 .inicioS1A1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  align-items: center;
+}
+.inicioS1 .inicioS1A1 img {
+  height: 200px;
+  width: 300px;
+}
+.inicioS1 .inicioS1A2 {
+  width: 50%;
+  height: 100%;
+}
+.inicioS1 .inicioS1A2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.inicioS2 {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.inicioS3 {
+  display: inline-flex;
+  height: 500px;
+  width: 100%;
+  align-items: center;
+}
+.inicioS3 .inicioS3A1 {
+  height: 100%;
+  width: 50%;
+}
+.inicioS3 .inicioS3A1 img {
+  height: 100%;
+  width: 100%;
+}
+.inicioS3 .inicioS3A2 {
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.inicioS4 {
+  position: relative;
+}
+.inicioS4 img {
+  display: block;
+  width: 100%;
+  height: 600px;
+}
+.inicioS4 h3 {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: azure;
+  font-size: 40px;
+  text-shadow: 3px 3px 1px black;
+}
+
+.inicioS5 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.inicioS5 article {
+  height: 400px;
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+/*Contacto*/
+.contactoS2 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contactoS2 .contactoS2A1 {
+  text-align: center;
+  align-items: center;
+  padding: 50px;
+}
+.contactoS2 .contactoS2A2 {
+  align-items: center;
+  padding: 50px;
+}
+.contactoS2 .contactoS2A2 i {
+  font-size: 300%;
+}
+.contactoS2 .contactoS2A2 a {
+  font-size: 150%;
+  text-decoration: none;
+}
+
+/*Planes*/
+.planesS2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.planesS2 article {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 300px;
+  text-align: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.planesS2 p {
+  width: 80%;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/*Nosotros*/
+.carousel {
+  display: flex;
+  width: 80%;
+  margin: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.carousel-item img {
+  margin: 50px;
+}
+
+.carousel h5, .carousel p {
+  text-shadow: 2px 2px 2px black;
+}
+
+/*Titulo de page Planes, Contacto y Nosotros*/
+.tituloS1 {
+  position: relative;
+}
+.tituloS1 img {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+.tituloS1 h2, .tituloS1 h3 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: azure;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px black;
+}
+.tituloS1 h2 {
+  top: 25px;
+}
+.tituloS1 h3 {
+  bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+  .piePagina {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pieLogo {
+    grid-row: 2/3;
+  }
+  .pieMapa {
+    grid-column: 1/3;
+  }
+  .pieIconos {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .nav .liNav {
+    width: 75px;
+  }
+}
+@media (max-width: 768px) {
+  .piePagina {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .pieLogo {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .pieMapa {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .pieIconos {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .nav .menu {
+    display: block;
+    color: black;
+    font-size: 24px;
+    position: absolute;
+    right: 50px;
+  }
+  .listaNav {
+    position: fixed;
+    background-color: rgba(184, 180, 255, 0.706);
+    top: 62px;
+    right: 50px;
+    width: 200px;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .nav .menu:hover {
+    color: beige;
+  }
+  .nav nav {
+    display: none;
+  }
+  .nav .menu:hover + nav {
+    display: block;
+  }
+  .nav nav:hover {
+    display: block;
+  }
+  .nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 15px;
+    text-align: center;
+  }
+  .crearCuenta {
+    background-color: aquamarine;
+    border: outset aquamarine;
+    width: 80%;
+  }
+  .inicioS1 {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .inicioS1 .inicioS1A1 {
+    order: 2;
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+  }
+  .inicioS1 .inicioS1A2 {
+    width: 100%;
+    height: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .piePagina {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .pieLogo {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .logoContainer {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .pieMapa {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .pieIconos {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
